@@ -66,7 +66,7 @@ const Login = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
+      "https://alan-path-server.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
